@@ -24,7 +24,7 @@
           <a class="nav-link" aria-current="page" href="{% url 'landing page' %}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'add car' %}">Add Car</a>
+          <a class="nav-link active" href="{% url 'add car' %}">Add Car</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Login</a>
@@ -39,10 +39,10 @@
     </header>
 
 <main>
-    <section class="edit-car-page">
-        <h2 class="edit-car-page-title">Edit car</h2>
+    <section class="add-car-page">
+        <h2 class="add-car-page-title">Add car</h2>
 
-        <form class="row g-3" method="post" class="form-row" action="{% url 'edit car' car.id %}">
+        <form class="row g-3" method="post" class="form-row" action="{% url 'add car' %}">
             {% csrf_token %}
             <div class="col-md-6">
     <label for="inputEmail4" class="form-label">Brand</label>
@@ -70,7 +70,7 @@
   </div>
 
   <div class="col-12">
-    <button type="submit" class="btn btn-primary">Edit car</button>
+    <button type="submit" class="btn btn-primary">Add car</button>
   </div>
 </form>
     </section>

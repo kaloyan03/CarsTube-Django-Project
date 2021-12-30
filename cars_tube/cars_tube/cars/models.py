@@ -29,3 +29,5 @@ class Car(models.Model):
     ),
     max_length=10
     )
+
+    image_url = models.URLField()

@@ -39,40 +39,25 @@
     </header>
 
 <main>
-    <section class="edit-car-page">
-        <h2 class="edit-car-page-title">Edit car</h2>
 
-        <form class="row g-3" method="post" class="form-row" action="{% url 'edit car' car.id %}">
-            {% csrf_token %}
-            <div class="col-md-6">
-    <label for="inputEmail4" class="form-label">Brand</label>
-    {{ form.brand }}
-  </div>
-  <div class="col-md-6">
-    <label for="inputPassword4" class="form-label">Model</label>
-    {{ form.model }}
-  </div>
-  <div class="col-12">
-    <label for="inputAddress" class="form-label">Price</label>
-    {{ form.price }}
-  </div>
-  <div class="col-12">
-    <label for="inputAddress2" class="form-label">Mileage</label>
-    {{ form.mileage }}
-  </div>
-  <div class="col-md-6">
-    <label for="inputCity" class="form-label">Fuel</label>
-    {{ form.fuel }}
-  </div>
-   <div class="col-md-6">
-    <label for="inputCity" class="form-label">Image Url</label>
-    {{ form.image_url }}
-  </div>
+    <section class="car-details-page">
+        <h2 class="car-details-page-title">Car details</h2>
 
-  <div class="col-12">
-    <button type="submit" class="btn btn-primary">Edit car</button>
+        <div class="card mb-3">
+  <div class="card-img">
+      <img src="{{ car.image_url }}" class="card-img-top" alt="...">
   </div>
-</form>
+  <div class="card-body">
+    <h5 class="card-title">Car: {{ car.brand }} {{ car.model }}</h5>
+    <p class="card-text">Price: {{ car.price }}</p>
+    <p class="card-text">Mileage: {{ car.mileage }}</p>
+    <p class="card-text">Fuel: {{ car.fuel }}</p>
+      <div class="buttons">
+          <a type="button" href="{% url 'edit car' car.id %}" class="btn btn-warning">Edit</a>
+          <a type="button" href="{% url 'delete car' car.id %}" class="btn btn-danger">Delete</a>
+      </div>
+  </div>
+</div>
     </section>
 </main>
 </body>

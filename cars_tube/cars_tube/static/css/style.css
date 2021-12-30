@@ -16,5 +16,68 @@ body {
 }
 
 .list-cars-page-title {
+    text-align: center;
     color: white;
+}
+
+.list-cars-page {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.list-cars-page .cards {
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.list-cars-page .card {
+    margin: 20px;
+
+}
+
+.add-car-page {
+    color: white;
+    max-width: 600px;
+    margin: 0 auto;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.add-car-page-title {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.car-details-page {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.delete-car-page {
+    width: 1000px;
+    margin: 0 auto;
+     color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.edit-car-page {
+    color: white;
+    max-width: 600px;
+    margin: 0 auto;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.edit-car-page-title {
+    margin-bottom: 50px;
+    text-align: center;
 }
