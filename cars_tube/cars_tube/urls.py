@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('cars/', include('cars_tube.cars.urls')),
     path('', include('cars_tube.common.urls')),
+    path('auth/', include('cars_tube.cars_auth.urls')),
 ]
