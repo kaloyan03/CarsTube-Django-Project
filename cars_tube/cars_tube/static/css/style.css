@@ -85,3 +85,11 @@ body {
 .sign-up-page {
     color: white;
 }
+
+.sign-in-page {
+    color: white;
+}
+
+.auth-nav {
+    display: flex;
+}
