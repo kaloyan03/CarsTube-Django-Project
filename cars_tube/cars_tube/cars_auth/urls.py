@@ -6,3 +6,5 @@ urlpatterns = [
     path('sign-up/', sign_up, name='sign up'),
     path('sign-out/', sign_out, name='sign out'),
 ]
+
+import cars_tube.cars_auth.signals

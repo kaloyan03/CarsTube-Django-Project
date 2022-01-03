@@ -84,6 +84,7 @@ body {
 
 .sign-up-page {
     color: white;
+    display: inline-block;
 }
 
 .sign-in-page {
@@ -93,3 +94,4 @@ body {
 .auth-nav {
     display: flex;
 }
+

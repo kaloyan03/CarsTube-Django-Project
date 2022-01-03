@@ -2,6 +2,8 @@ from django import forms
 from django.contrib.auth import authenticate
 from django.core.exceptions import ValidationError
 
+from cars_tube.cars_auth.models import Profile
+
 
 class SignInForm(forms.Form):
     user = None
@@ -28,3 +30,11 @@ class SignInForm(forms.Form):
 
     def save(self):
         return self.user
+
+
+class ProfileForm(forms.ModelForm):
+    class Meta:
+        model = Profile
+        exclude = ['user']
+
+
